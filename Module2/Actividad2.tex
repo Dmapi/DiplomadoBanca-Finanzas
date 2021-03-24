@@ -1,0 +1,166 @@
+%\documentclass[12pt]{article}
+\documentclass[preprint,floatfix] {revtex4} 
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage[backend=biber, style=apa, citestyle=authoryear]{biblatex}
+%\usepackage{apacite}
+\addbibresource{referencias.bib}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+%%paquetes internos
+\usepackage{subfigure}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{color, soul}
+\newcommand{\rvec}{\mathrm {\mathbf {r}}} 
+\renewcommand{\thetable}{S\arabic{table}}
+%%comandos  \modulo \nametarea \prof
+\def \modulo{2: Cŕedito Bancario y Empresarial}
+\def \nametarea{Actividad 2}
+\def \prof{Mtro. Leandro Otaolaurruchi González}
+\def \fentrega{18 de marzo de 2021}
+
+
+\begin{document}
+    \input{portada}
+    \section{Planteamiento}
+        \begin{itemize}
+            \item Enlistar las instituciones de crédito autorizadas y en operación por la SHCP agrupadas por Banca Múltiple y Banca de Desarrollo.
+            \item ¿Cuáles son ejemplos de fideicomisos públicos? ¿Algunos otorgan créditos? ¿Si es así, puedes dar un ejemplo?
+        \end{itemize}
+    \section{Respuestas}
+        \subsection{Instituciones de crédito autorizadas}
+            En México, existen actualmente 51 instituciones de crédito autorizadas por la Comisión Nacional Bancaria y de Valores, las cuales se agrupan en las que son de Banca Múltiple y las que son de Banca de Desarrollo. 
+            
+            Estas últimas son Sociedades Nacionales de Crédito y solamente son seis (\cite{cnbv-bd}):
+            \begin{enumerate}
+                \item Banco Nacional de Comercio Exterior.
+                \item Banco Nacional de Obras y Servicios Públicos.
+                \item Nacional Financiera.
+                \item Banco Nacional del Ejército.
+                \item Banco del Ahorro Nacional y SErvicios Financieros.
+                \item Sociedad Hipotecaria Federal.
+            \end{enumerate}
+            
+            Las 45 Instituciones restantes, entran en la categoría de Banca de Desarrollo. Todas ellas se muestran a detalle con su número de clave del Padrón de Entidades Supervisadas (PES) en el Cuadro S1.
+            \newpage
+            \begingroup
+                \squeezetable
+                \begin{table}[h]
+                    \caption {\label{tab:table1} Instituciones de Banca Múltiple autorizadas y en operación$^{\mathrm{a}}$} 
+                    \begin{ruledtabular}
+                        \begin{tabular}{llllll}
+                            Núm. & \multicolumn{2}{c}{} & Núm. & \multicolumn{2}{c}{}    \\ 
+                            \cline{2-3} \cline{5-6} 
+                                  & Cve. PES & Razón social &   &  Cve. PES   & Razon social   \\    \hline
+                            $1$  &  62       & Banco Nacional de México, S.A.  &
+                            $24$ &  5167  &   Banco Azteca, S.A.
+                            \\       
+                            $2$  &  67       & Banco Santander (México), S.A.$^\dag$ & 
+                            $25$ &  5201  &   Banco Credit Suisse (Mexico), S.A.
+                            \\         
+                            $3$  &  70   & HSBC México, S.A. & 
+                            $26$ & 5495 & Banco Autofín México$^\dag$
+                            \\
+                            $4$  & 72    & Scotiabank Inverlat, S.A.$^\dag$           &  
+                            $27$ &  5465  &   Barclays Bank Mexico, S.A.
+                            \\
+                            $5$   & 75    & BBVA Bancomer          &    
+                            $28$  & 5501    & Banco Ahorro Famsa$^\dag$
+                            \\    
+                            $6$  & 79    & Banco Mercantil del Norte, S.A.          &     
+                            $29$ & 5519  & INTERCAM Banco, S.A.
+                            \\
+                            $7$   &  82  & Banco Interacciones, S.A.$^\dag$          &  
+                            $30$  &  5523  & ABC Capital, S.A.
+                            \\
+                            $8$ &   86  &   Banco Inbursa, S.A.$^\dag$    &
+                            $31$ &  5535  &   Banco ACTINVER, S.A.
+                            \\
+                            $9$ &   88  &   Banca Mifel, S.A.$^\dag$    &
+                            $32$ &  5554  &   Banco COMPARTAMOS, S.A.
+                            \\
+                            $10$ &   90  &   Banco Regional de Monterrey$^\dag$    &
+                            $33$ &  5555  &   Banco Multiva, S.A.
+                            \\
+                            $11$ &  91  &   Banco Invex, S.A. &
+                            $34$ &  5558  &   UBS Bank Mexico, S.A.                                
+                            \\
+                            $12$ &  93  &   Banco del Bajío, S.A. &
+                            $35$ &  5559  &  Bancoppel, S.A. 
+                            \\
+                            $13$ &  94  &   BANSI, S.A. &
+                            $36$ &  5587  &   Consubanco, S.A. 
+                            \\
+                            $14$ &  99  &   Banca Afirme, S.A. &
+                            $37$ &  5588  &   Banco Walt-Mart de México Adelante, S.A. 
+                            \\
+                            $15$ &  109  &   Bank of America Mexico, S.A. &
+                            $38$ &  5599  &   Volkswagen Bank, S.A. 
+                            \\
+                            $16$ &  119  &   Banco J.P. Morgan, S.A. &
+                            $39$ &  5976  &   Banco Base, S.A. 
+                            \\
+                            $17$ &  122  &   Banco Ve Por Más, S.A. &
+                            $40$ &  7447  &   Banco Pagatodo, S.A. 
+                            \\
+                            $18$ &  124  &   American Express Mexico, S.A. &
+                            $41$ &  7657  &   Banco Forjadores, S.A. 
+                            \\
+                            $19$ &  126  &   Investa Bank, S.A. &
+                            $42$ &  7659  &   Bankaool, S.A. 
+                            \\
+                            $20$ &  782  &   CIBANCO, S.A. &
+                            $43$ &  7684  &   Banco Inmobiliario Mexicano, S.A. 
+                            \\
+                            $21$ &  1186  &   Bank of Tokio-Mitsubishi, S.A. &
+                            $44$ &  7718  &   Fundación Donde Banco, S.A. 
+                            \\
+                            $22$ &  1598  &   Banco Monex, S.A. &
+                            $45$ &  7841  &   Banco BANCREA, S.A. 
+                            \\
+                            $23$ &  4385  &   Deutsche Bank Mexico, S.A.
+                        \end{tabular}
+                    \end{ruledtabular}
+                    \begin{tabbing}
+                        $^{\mathrm{a}}$Ref.~\cite{cnbv-bm}. \hspace{25pt} \= 
+                        $^\dag$Institución de Banca Múltiple, Grupo Financiero.
+                    \end{tabbing}
+                \end{table}
+            \endgroup
+        \subsection{Fideicomisos públicos}
+            El fideicomiso público en México engloba los contratos en los que el Estado mexicano transmite un bien o un derecho público a otra parte con un fin determinado. La propiedad pública pasa del gobierno federal o los ayuntamientos a otros sujetos que tienen la obligación de darle una utilidad concreta. Su propósito, ese entonces auxiliar al Ejecutivo Federal en las atribuciones del Estado para impulsar las áreas prioritarias y estratégicas del desarrollo (\cite{fideicomisos-sarahi}).
+            
+            Ahora bien, partiendo de su propósito, se pueden listar algunas de sus funcionalidades (\cite{fideicomisopublico-victoria}):
+            
+            \begin{enumerate}
+                \item Asignar determinados recursos y bienes públicos a fines específicos.
+                \item Formar una organización distinta con un patrimonio asignado que funcione de forma independiente del ente público. 
+                \item Proporcionar soporte legal a los objetos del fideicomiso para que se gestionen de forma independiente y orientados a cumplir su fin. 
+            \end{enumerate}
+            
+            Además en el fideicomiso público se logran identificar diferentes elementos que lo conforman, entre ellos el contrato, elementos personales, fideicomitente, fiduciario, fideicomisario, fines u objetivos y el patrimonio fideicometido (\cite{fideicomisopublico-victoria}).
+            
+            También con base en sus características iniciales, los fideicomisos se agrupan en:
+            \begin{enumerate}
+                \item La finalidad con la cual se hayan creado (fideicomiso público de administración, fideicomiso público de inversión, fideicomiso público de garantía).
+                \item El modo de financiación (reembolsable, no reembolsable o mixto).
+            \end{enumerate}
+            
+            A manera de ejemplo, se exponen algunos fideicomisos públicos destinados a:
+            \begin{itemize}
+                \item Financiar obras públicas para viviendas, centros educativos, hospitales.
+                \item Financiar desarrollo agrícola a través de la compra de maquinaria y herramientas.
+                \item Financiar un programa de becas para estudios superiores en universidades estatales.
+                \item La recuperación de infraestructuras en zonas afectadas por desastres naturales (inundaciones, terremotos, huracanes, entre otros).
+                \item Financiar programas contra la delincuencia organizada mediante la compra de recursos de equipamiento y armas para las fuerzas del orden.
+                \item  Financiar programas de prestación social, como gastos médicos, pago de jubilación, pago de pensiones, etc.
+                \item Financiar programas para el fomento de la inversión en zonas deprimidas del país.
+            \end{itemize}
+            
+
+    \printbibliography
+\end{document}

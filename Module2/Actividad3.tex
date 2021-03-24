@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage[backend=biber, style=apa, citestyle=authoryear]{biblatex}
+%\usepackage{apacite}
+\addbibresource{referencias.bib}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+%%paquetes internos
+\usepackage{subfigure}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{color, soul}
+\usepackage{threeparttable}
+\usepackage{tablefootnote}
+\newcommand{\rvec}{\mathrm {\mathbf {r}}} 
+%\renewcommand{\thetable}{S\arabic{table}}
+%%comandos  \modulo \nametarea \prof
+\def \modulo{2: Cŕedito Bancario y Empresarial}
+\def \nametarea{Actividad 3}
+\def \prof{Mtro. Leandro Otaolaurruchi González}
+\def \fentrega{23 de marzo de 2021}
+
+\begin{document}
+    \input{portada}
+    \section{Planteamiento}
+        Investigar:
+        \begin{enumerate}
+            \item El Costo Anual Total (CAT) para una tarjeta de crédito de cualquier banco.
+            \item El CAT para un crédito de auto o personal de cualquier banco.
+            \item El CAT para un crédito hipotecrario de cualquier banco.
+            \item ¿Por qué difieren éstos de la tasa que el banco ofrece? ¿qué otros costos se incluyen el CAT además de la tasa de interés?
+        \end{enumerate}
+    \section{Respuestas}
+        \subsection{CAT tarjeta de crédito}
+            Debido a que la tarjeta de crédito es de los instrumentos más solicitados en las instituciones bancarias, se hizo una comparativa de cinco de ellas a manera de comparación. 
+             \begingroup
+                \begin{table}[h!]
+                    \centering
+                    \caption {Instituciones de Banca Múltiple autorizadas y en operación} 
+                    \begin{tabular}{lll}
+                        \hline
+                        Instutución bancaria & Tarjeta & CAT promedio sin IVA [\%] \\
+                        \hline
+                        American Express\footnotemark &  Basica  & 57.3
+                        \\       
+                        BBVA\footnotemark &  Azul BBVA   &   101.4
+                        \\         
+                        HSBC\footnotemark  &  HSBC 2Now  &   82.7
+                        \\
+                        Scotiabank\footnotemark & IDEAL Scotiabank & 111.5
+                        \\
+                        Hey Banco\footnotemark  & Hey    &   44.8
+                        \\    
+                    \end{tabular}
+                    
+                \end{table}
+                \footnotetext[1]{\cite{tdc-american}}
+                \footnotetext[2]{\cite{tdc-bbva}}
+                \footnotetext[3]{\cite{tdc-hsbc}}
+                \footnotetext[4]{\cite{tdc-scotiabank}}
+                \footnotetext[5]{\cite{tdc-heybanco}}
+            \endgroup
+        \subsection{CAT de crédito automotriz}
+            Para el CAT del crédito automotriz, se decidió utilizar el simulador de la página de BBVA para mayor practicidad (\cite{simulador-bbva}). El escenario contemplado en el simulador, fue el siguiente:
+            \begin{itemize}
+                \item Se contempló un automovil Honda modelo Civic Touring Aut año 2021.
+                \item El precio de lista fue de \$475,900.
+                \item Se consideró un enganche mínimo de \$95,180
+                \item El plazo fue de 36 meses.
+            \end{itemize}
+            Con esos datos, el valor arrojado del CAT fue de 21.8\% sin IVA, con una tasa de interés fija del 15.99\% anual.
+        \subsection{CAT para crédito hipotecario}
+            Se consultó al banco Inbursa, en el cual el CAT variaba dependiendo del rango de vivienda (\cite{inbursa-hipoteca}) como se muestra a continuación.
+            \begin{table}[h!]
+                    \centering
+                    \caption {CAT promedio crédito hipotecario en Inbursa} 
+                    \begin{tabular}{ll}
+                        \hline
+                        Rango de vivienda & CAT promedio sin IVA \\
+                        \hline
+                        Media  & 12.9\%
+                        \\       
+                        Residencial  & 12.0\%
+                        \\         
+                        Residencial Plus  & 12.0\%
+                    \end{tabular}
+                \end{table}
+        \subsection{Diferencia entre la tasa de interés y el CAT}
+            Primero, la tasa de interés es el rendimiento que genera el monto prestado en un tiempo determinado expresado en forma porcentual y es calculada (en el caso de las tarjetas de crédito) sumando una tasa fija estipulada por la institución financiera y la cotización de la Tasa de Interés Interbancaria, calculada por el Banco de México. La tasa de interés resultante puede ser fija o variable dependiendo de los términos en los que se contrate el crédito.
+            
+            Referente al Costo Anual Total (CAT), de acuerdo con el Banco de México, <<es una medida estandarizada del costo de un financiamiento porque incorpora todos los costos y gastos inherentes al crédito que son exigidos al acreditado>>.
+            
+            Esto significa que el CAT incorpora, además de la tasa de interés anual, todos los costos adicionales que surgen del crédito, como comisiones, anualidad, seguros, etcétera. Calcularlo es distinto para cada caso de crédito y depende de diferentes variables, como la tasa de interés del producto financiero, línea de crédito de éste, servicios adicionales contratados, entre otros (\cite{catytasa-bbva}).
+
+
+
+    \printbibliography
+\end{document}
